@@ -7,7 +7,7 @@
     -u rstudio-server-1.0.1 \
     -u wrwroxy-0.1 \
     -u wrapprun-0.1 \
-    -w "none" \
+    -w "headless" \
     -c "xview -fullscreen -onroot @tool/data/shinyapp_logo.jpg" \
     -c "wrwroxy --listenHost 0.0.0.0 --listenPort 8000 --forwardHost 127.0.0.1 --forwardPort 8001 --stream-log --logfile /dev/null" \
     -C "wrapprun --host 0.0.0.0 --port 8001 --type shiny @tool/bin/shinyapp"
